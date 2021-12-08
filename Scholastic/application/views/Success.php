@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank you!</title>
-  <link rel="shortcut icon" href="<?php echo base_url("application/assets/images/book-white.png"); ?>" type="image/x-icon" />
+  <link rel="shortcut icon" href="<?php echo base_url("application/assets/images/book-white-title.png"); ?>" type="image/x-icon" />
   <?php echo link_tag("application/assets/css/Success.css")?>
   <!-- <link rel="stylesheet" href="<?php echo base_url("application/assets/css/Success.css") ?>"> -->
 </head>
