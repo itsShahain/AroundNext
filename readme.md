@@ -17,3 +17,4 @@ CodeIgniter and JQuery.
 - Create a database inside of PHPMyAdmin named dbScholasticEvents
 - Import the .sql file
 - Give 777 permisions to the folder
+- This uses CDNs therefore be sure to be connected to the internet!
