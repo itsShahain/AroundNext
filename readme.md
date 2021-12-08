@@ -14,7 +14,6 @@ CodeIgniter and JQuery.
     cd /var/www/html/Shahain/
     git clone https://github.com/itsShahain/Scholastic.git
     ```
-- Create a database inside of PHPMyAdmin named dbScholasticEvents
 - Import the .sql file
 - Give 777 permisions to the folder
 - This uses CDNs to deliver certain svgs and font families therefore be sure to be connected to the internet!
