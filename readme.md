@@ -1,0 +1,19 @@
+# Scholastic
+### &copy; 2021 Shahain 
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/itsShahain/Scholastic)
+
+Scholastic is an event management system that is powered by PHP,JS,HTML,CSS with the help of frameworks along the likes of
+CodeIgniter and JQuery.
+
+## Steps To Get Going
+
+- Create a folder named Shahain inside of your webroot
+- Clone this repo into it
+    ```sh
+    cd /var/www/html/Shahain/
+    git clone https://github.com/itsShahain/Scholastic.git
+    ```
+- Create a database inside of PHPMyAdmin named dbScholasticEvents
+- Import the .sql file
+- Give 777 permisions to the folder
