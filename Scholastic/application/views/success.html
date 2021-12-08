@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			@import url("http://fonts.cdnfonts.com/css/cubano");
+			@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			body {
+				height: 100vh;
+				background-color: black;
+				color: whitesmoke;
+				padding: 1px;
+			}
+
+			.container {
+				width: 100%;
+				height: auto;
+				margin: 40px auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				/* background-color: rgb(80, 50, 50); */
+			}
+			.hero-main {
+				font-family: "Cubano";
+				color: rgba(75, 74, 74, 0.5);
+				font-size: 50px;
+				width: 300px;
+			}
+			.hero-sub {
+				font-family: "Sofia Pro";
+				font-size: 100px;
+				transform: translateY(-170px) translateX(100px);
+				width: max-content;
+			}
+
+			.hero-cont {
+				width: max-content;
+				align-self: flex-start;
+				margin-left: 10%;
+			}
+
+			.emoji {
+				font-size: 250px;
+				font-family: "Cubano";
+				margin-bottom: 80px;
+				width: max-content;
+			}
+
+			.message {
+				font-family: "Sofia Pro";
+				font-size: 30px;
+				width: 80%;
+				color: #1a8cd8;
+			}
+
+			@media screen and (max-width: 900px) {
+				.emoji {
+					font-size: 180px;
+				}
+			}
+			@media screen and (max-width: 700px) {
+				.hero-cont {
+					margin-left: 5%;
+				}
+
+				.message {
+					width: 85%;
+				}
+			}
+
+			@media screen and (max-width: 650px) {
+				.hero-main {
+					font-family: "Cubano";
+					color: rgba(75, 74, 74, 0.5);
+					font-size: 30px;
+					width: 200px;
+				}
+				.hero-sub {
+					font-family: "Sofia Pro";
+					font-size: 60px;
+					transform: translateY(-100px) translateX(40px);
+					width: max-content;
+				}
+
+				.emoji {
+					font-size: 120px;
+				}
+			}
+			@media screen and (max-width: 440px) {
+				.emoji {
+					font-size: 90px;
+				}
+				.message {
+					font-size: 25px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="hero-cont">
+				<h1 class="hero-main">Thanks for showing your Interest!</h1>
+				<h1 class="hero-sub">Scholastic</h1>
+			</div>
+
+			<h2 class="emoji"></h2>
+			<p class="message">
+				One of our admins will review your entry and if the review is successful
+				you will receive a confirmation email to the provided email address.
+				Afterwards you may browse our upcoming events as much as you like!
+				(Don't forget to post any upcoming event too!)
+			</p>
+		</div>
+	</body>
+</html>
+
+<!-- 
+(＾▽＾)
+ᕕ( ᐛ )ᕗ
+(｡´▽｀)ﾉ
+( ᐛ )و
+へ(‾◡◝)> 
+(•́ .̫ •̀ )-->

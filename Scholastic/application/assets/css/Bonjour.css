@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import url("http://fonts.cdnfonts.com/css/cubano");
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+
+body {
+	height: 100vh;
+	color: whitesmoke;
+	font-family: "Sofia Pro";
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	/* flex-direction: column; */
+}
+
+.details {
+	flex-basis: 46%;
+	background-color: black;
+	padding-top: 50px;
+	/* order: 1; */
+}
+
+.school {
+	flex-basis: 54%;
+	size: cover;
+	/* order: 2; */
+}
+
+.aniSVG {
+	margin-top: 140px;
+	margin-right: 40px;
+	background-color: whitesmoke;
+	opacity: 0.9;
+	border-radius: 20px;
+	transform: translateX(-50px);
+}
+
+.logo {
+	width: 250px;
+	margin-left: 25px;
+}
+
+.header-main {
+	font-family: "Cubano";
+	font-size: 70px;
+	padding-bottom: 50px;
+}
+
+.header-sub {
+	padding-top: 25px;
+	font-size: 35px;
+}
+
+.signup {
+	width: 300px;
+	color: whitesmoke;
+	font-family: "Sofia Pro";
+	font-size: 18px;
+	height: 40px;
+	background-color: #1d9bf0;
+	border: none;
+	border-radius: 40px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	transition: 250ms background-color;
+	cursor: pointer;
+}
+
+.signup:hover {
+	background-color: #1a8cd8;
+}
+
+.signin {
+	width: 300px;
+	color: #1d9bf0;
+	font-family: "Sofia Pro";
+	font-size: 18px;
+	height: 40px;
+	background-color: black;
+	border: 1px solid #3d4d58;
+	border-radius: 40px;
+	transition: 250ms background-color;
+	cursor: pointer;
+}
+
+.signin:hover {
+	background-color: #031018;
+}
+
+.strike {
+	display: inline-block;
+	border-bottom: solid 1px #31373a;
+	width: 140px;
+	position: relative;
+	bottom: 2px;
+}
+
+.sub-cont {
+	margin-left: 50px;
+}
+
+.question {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.agree {
+	font-size: 11px;
+	width: 300px;
+	color: gray;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #1d9bf0;
+}
+
+@media screen and (max-width: 1340px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.details {
+		order: 1;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.school {
+		order: 2;
+	}
+
+	.aniSVG {
+		width: 100%;
+		margin-top: 0px;
+		margin-right: 0px;
+		transform: translateX(0px);
+		display: block;
+		border-radius: 0px;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.sub-cont {
+		margin-left: 20px;
+	}
+
+	.details {
+		padding-top: 10px;
+	}
+
+	.header-main {
+		font-size: 50px;
+	}
+
+	.header-sub {
+		font-size: 25px;
+	}
+}
+@media screen and (min-width: 820px) {
+	.form {
+		/* display: none; */
+		width: 600px;
+		height: 600px;
+		background-color: black;
+		border-radius: 15px;
+		color: whitesmoke;
+		font-family: "Sofia Pro";
+		padding: 10px 30px;
+		position: fixed;
+		/* top: 150px;
+        margin:0 auto; */
+		left: 0;
+		right: 0;
+		bottom: 15%;
+		margin: 0 auto;
+		box-shadow: 0 0 50px 10px rgba(250, 250, 250, 0.3),
+			0px 0px 0px 1000px rgba(0, 0, 0, 0.8);
+		display: none;
+	}
+}
+.book {
+	width: 50px;
+	display: block;
+	margin: 10px auto;
+}
+
+.form input {
+	border-radius: 5px;
+	width: 540px;
+	height: 60px;
+	background-color: black;
+	border: solid 1px rgb(44, 49, 51);
+	color: whitesmoke;
+	font-family: "Sofia Pro";
+	font-size: 20px;
+}
+
+.create {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.form label {
+	display: block;
+	width: max-content;
+	text-align: center;
+	transform: translateY(-36px) translateX(20px);
+	font-size: 18px;
+	transition: transform 150ms;
+	color: grey;
+	background-color: black;
+}
+
+.form input:focus + label,
+.form input:not(:focus):valid + label {
+	transform: translateY(-70px) translateX(2px) scale(0.8);
+	/* color: #1d9bf0; */
+}
+
+.form input:focus {
+	outline: rgb(177, 175, 175) solid 2px;
+}
+
+.form span {
+	display: block;
+	font-size: 14px;
+	color: red;
+	transform: translateY(-15px);
+	width: max-content;
+	margin-top: 5px;
+}
+
+.signup-conf {
+	width: 300px;
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	color: whitesmoke;
+	font-family: "Sofia Pro";
+	font-size: 18px;
+	height: 40px;
+	background-color: #78797a;
+	border: none;
+	border-radius: 40px;
+	margin-top: 30px;
+	margin-left: 110px;
+	transition: 200ms background-color;
+	cursor: not-allowed;
+}
+
+.form-ok-activate .signup-conf {
+	background-color: #1a8cd8;
+	cursor: pointer;
+}
+
+.fa-times-circle {
+	position: absolute;
+	top: 40px;
+	transform: scale(1.2);
+	transition: color 150ms;
+}
+
+.fa-times-circle:hover {
+	cursor: pointer;
+	border-radius: 50%;
+	color: red;
+}
+
+@media screen and (max-width: 820px) {
+	.form {
+		background-color: black;
+		border-radius: 0px;
+		color: whitesmoke;
+		font-family: "Sofia Pro";
+		padding: 10px 30px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		box-shadow: 0 0 0;
+		display: none;
+	}
+
+	.create {
+		margin-top: 80px;
+		width: 540px;
+		margin: 80px auto 50px;
+	}
+
+	.inp-cont {
+		width: max-content;
+		margin: 0 auto;
+	}
+
+	.btn-cont {
+		width: 100%;
+	}
+
+	.signup-conf {
+		width: 50%;
+		left: 0;
+		margin: 0 25%;
+	}
+}
+@media screen and (max-width: 610px) {
+	.inp-cont {
+		width: 100%;
+	}
+
+	.form input {
+		width: 100%;
+	}
+}

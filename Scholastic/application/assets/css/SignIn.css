@@ -1,0 +1,172 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(http://localhost/Shahain/Scholastic/application/assets/images/book-white.png);
+	background-size: 60px;
+	background-color: black;
+}
+@import url("http://fonts.cdnfonts.com/css/cubano");
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+
+.form {
+	box-shadow: 0 0 60px whitesmoke, 0 0 0 1000px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 820px) {
+	.form {
+		/* display: none; */
+		width: 600px;
+		height: 600px;
+		background-color: black;
+		border-radius: 15px;
+		color: whitesmoke;
+		font-family: "Sofia Pro";
+		padding: 10px 30px;
+		position: fixed;
+		/* top: 150px;
+  margin:0 auto; */
+		left: 0;
+		right: 0;
+		bottom: 15%;
+		margin: 20% auto 0px;
+
+		/* display: none; */
+	}
+}
+.book {
+	width: 50px;
+	display: block;
+	margin: 10px auto;
+}
+
+.form input {
+	border-radius: 5px;
+	width: 540px;
+	height: 60px;
+	background-color: black;
+	border: solid 1px rgb(44, 49, 51);
+	color: whitesmoke;
+	font-family: "Sofia Pro";
+	font-size: 20px;
+}
+
+.create {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.form label {
+	display: block;
+	width: max-content;
+	text-align: center;
+	transform: translateY(-36px) translateX(20px);
+	font-size: 18px;
+	transition: transform 150ms;
+	color: grey;
+	background-color: black;
+}
+
+.form input:focus + label,
+.form input:not(:focus):valid + label {
+	transform: translateY(-70px) translateX(2px) scale(0.8);
+	/* color: #1d9bf0; */
+}
+
+.form input:focus {
+	outline: rgb(177, 175, 175) solid 2px;
+}
+
+.form span {
+	display: block;
+	font-size: 14px;
+	color: red;
+	transform: translateY(-15px);
+	width: max-content;
+	margin-top: 5px;
+}
+
+.signup-conf {
+	width: 300px;
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	color: whitesmoke;
+	font-family: "Sofia Pro";
+	font-size: 18px;
+	height: 40px;
+	background-color: #78797a;
+	border: none;
+	border-radius: 40px;
+	margin-top: 30px;
+	margin-left: 110px;
+	transition: 200ms background-color;
+	cursor: not-allowed;
+}
+
+.form-ok-activate .signup-conf {
+	background-color: #1a8cd8;
+	cursor: pointer;
+}
+
+.fa-times-circle {
+	position: absolute;
+	top: 40px;
+	transform: scale(1.2);
+	transition: color 150ms;
+}
+
+.fa-times-circle:hover {
+	cursor: pointer;
+	border-radius: 50%;
+	color: red;
+}
+
+@media screen and (max-width: 819px) {
+	.form {
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 0px;
+		color: whitesmoke;
+		font-family: "Sofia Pro";
+		padding: 10px 30px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		box-shadow: 0 0 0;
+	}
+
+	.create {
+		margin-top: 80px;
+		width: 540px;
+		margin: 80px auto 50px;
+	}
+
+	.inp-cont {
+		width: max-content;
+		margin: 0 auto;
+	}
+
+	.btn-cont {
+		width: 100%;
+	}
+
+	.signup-conf {
+		width: 50%;
+		left: 0;
+		margin: 0 25%;
+	}
+}
+@media screen and (max-width: 610px) {
+	.inp-cont {
+		width: 100%;
+	}
+
+	.form input {
+		width: 100%;
+	}
+}
