@@ -307,4 +307,8 @@ class Scholastic extends CI_Controller
       header("Location:http://localhost/Shahain/Scholastic/index.php/Scholastic/");
     }
   }
+
+  function load_beta() {
+    $this->load->view("beta-feature.html");
+  }
 }

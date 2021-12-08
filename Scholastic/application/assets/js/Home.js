@@ -220,3 +220,11 @@ const times = document.getElementById("close-search");
 times.addEventListener("click", (e) => {
 	Body.classList.toggle("activate-mobile-search");
 });
+
+
+const BetaArray = document.querySelectorAll(".beta");
+BetaArray.forEach((ele)=>{
+	ele.addEventListener("click",(e)=>{
+		location.href = "http://localhost/Shahain/Scholastic/index.php/Scholastic/load_beta"
+	})
+})

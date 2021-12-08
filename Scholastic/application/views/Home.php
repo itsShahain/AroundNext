@@ -24,21 +24,21 @@
   </div>
   <div class="bottom-menu">
     <div class="tag tag1" id="home-mobile"><img src="<?php echo base_url("application/assets/images/book-white.png") ?>" alt="" /></div>
-    <div class="tag tag2"><i class="fas fa-school"></i><span>School</span></div>
+    <div class="tag tag2 beta"><i class="fas fa-school"></i><span>School</span></div>
     <div class="tag tag3" id="bookmark-mobile"><i class="fas fa-bookmark"></i><span>Bookmarks</span></div>
     <div class="tag tag4" id="new-num-mobile-tag"><span id="new-num-mobile">0</span><i class="fas fa-bell"></i><span>New Events</span></div>
-    <div class="tag tag5"><i class="fas fa-list-ul"></i><span>My Lists</span></div>
     <div class="tag tag6" id="tag6-mobile"><i class="fas fa-search"></i><span>Search</span></div>
+    <div class="tag tag5 beta"><i class="fas fa-list-ul"></i><span>My Lists</span></div>
   </div>
   <div class="container">
     <div class="left">
       <div class="left-container">
         <div class="tag tag1" id="home-main"><img src="<?php echo base_url("application/assets/images/book-white.png") ?>" alt="" /></div>
-        <div class="tag tag2"><i class="fas fa-school"></i><span>School</span></div>
+        <div class="tag tag2 beta" ><i class="fas fa-school"></i><span>School</span></div>
         <div class="tag tag3" id="bookmark-main"><i class="fas fa-bookmark"></i><span>Bookmarks</span></div>
         <div class="tag tag4" id="new-num-main-tag"><span id="new-num-main">3</span><i class="fas fa-bell"></i><span>New Events</span></div>
-        <div class="tag tag5"><i class="fas fa-list-ul"></i><span>My Lists</span></div>
         <div class="tag tag6" id="tag6-main"><i class="fas fa-search"></i><span>Search</span></div>
+        <div class="tag tag5 beta"><i class="fas fa-list-ul"></i><span>My Lists</span></div>
       </div>
       <!-- <i class="fas fa-search"></i> -->
       <div class="create-new">
