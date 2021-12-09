@@ -10,6 +10,7 @@
   <script src="https://kit.fontawesome.com/ded7d2cbbf.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="<?php echo base_url("application/assets/images/book-white-title.png"); ?>" type="image/x-icon" />
   <link rel="stylesheet" href="<?php echo base_url("application/assets/css/SignIn.css") ?>">
+  <title>Scholastic - Sign In</title>
 </head>
 
 <body>
