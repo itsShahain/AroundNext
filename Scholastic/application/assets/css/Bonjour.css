@@ -240,6 +240,12 @@ a {
 	margin-top: 5px;
 }
 
+
+::selection {
+	background-color: #1d9bf0;
+	color: white;
+}
+
 .signup-conf {
 	width: 300px;
 	display: block;

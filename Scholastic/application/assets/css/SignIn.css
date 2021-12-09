@@ -140,6 +140,11 @@ body {
 		box-shadow: 0 0 0;
 	}
 
+	::selection {
+		background-color: #1d9bf0;
+		color: white;
+	}
+
 	.create {
 		margin-top: 80px;
 		width: 540px;

@@ -16,6 +16,12 @@ body {
 	background-color: black;
 }
 
+
+::selection {
+	background-color: #1d9bf0;
+	color: white;
+}
+
 @media screen and (min-width: 820px) {
 	.form {
 		/* display: none; */

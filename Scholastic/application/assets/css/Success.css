@@ -35,6 +35,11 @@ body {
 	border-radius: 20px;
 }
 
+::selection {
+	background-color: #1d9bf0;
+	color: white;
+}
+
 .hero-main {
 	font-family: "Cubano";
 	color: rgba(75, 74, 74, 0.5);
