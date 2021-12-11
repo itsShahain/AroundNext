@@ -13,6 +13,7 @@ class Scholastic extends CI_Controller
     $this->load->model('ScholasticModel');
     $this->load->helper('html');
     $this->load->library('session');
+    $this->load->library('email');
   }
 
   public function index()
@@ -30,6 +31,15 @@ class Scholastic extends CI_Controller
     $this->ScholasticModel->AddAwaitApprovalTuple($Email, $Name, $ClassTeacher, $UserAgent, $UserIP);
 
     $this->load->view("Success");
+    $this->email->from('your@example.com', 'Your Name');
+    $this->email->to('someone@example.com');
+    $this->email->cc('another@another-example.com');
+    $this->email->bcc('them@their-example.com');
+
+    $this->email->subject('Email Test');
+    $this->email->message('Testing the email class.');
+
+    $this->email->send();
   }
 
   public function sign_in()
@@ -71,7 +81,8 @@ class Scholastic extends CI_Controller
     }
   }
 
-  function realtime_email_check() {
+  function realtime_email_check()
+  {
     $Result = $this->ScholasticModel->is_existing_email($this->input->post("check_mail"));
     echo $Result;
   }
@@ -97,8 +108,8 @@ class Scholastic extends CI_Controller
           $ClassBk = $this->ScholasticModel->check_bookmark($row->EID, $this->session->Email);
           $ClassHrt = $this->ScholasticModel->check_hearts($row->EID, $this->session->Email);
           $ENum++;
-          $EachPost = 
-          '<div class="test-post" id="test-post">
+          $EachPost =
+            '<div class="test-post" id="test-post">
             <div class="event-heading-cont">
               <span class="number">#' . $ENum . '</span>
               <h2>' . $row->Title . '</h2>
@@ -131,16 +142,16 @@ class Scholastic extends CI_Controller
       $QResult = $this->ScholasticModel->retrieve_bookmarks($this->session->Email);
       $NumRows = $QResult->num_rows();
       $QResult = $QResult->result();
-      $Err = 
-      '<div class="error-cont">
+      $Err =
+        '<div class="error-cont">
         <img src="http://localhost/Shahain/Scholastic/application/assets/images/kao_2.png" alt="">
         <p>You don\'t seem to have any bookmarks. Bookmark a few to see them here.</p>
       </div>';
       if ($NumRows) {
         foreach ($QResult as $row) {
           $ENum++;
-          $EachPost = 
-          '<div class="test-post">
+          $EachPost =
+            '<div class="test-post">
             <div class="event-heading-cont">
               <span class="number">#' . $ENum . '</span>
               <h2>' . $row->Title . '</h2>
@@ -231,16 +242,16 @@ class Scholastic extends CI_Controller
       $QResult = $this->ScholasticModel->get_page_new_events($this->session->Email);
       $NumRows = $QResult->num_rows();
       $QResult = $QResult->result();
-      $Err = 
-      '<div class="error-cont">
+      $Err =
+        '<div class="error-cont">
         <img src="http://localhost/Shahain/Scholastic/application/assets/images/kao_4.png" alt="">
         <p>There are no new events here. If someone posts an event while you are online we will be sure to notify you here.</p>
       </div>';
       if ($NumRows) {
         foreach ($QResult as $row) {
           $ENum++;
-          $EachPost = 
-          '<div class="test-post">
+          $EachPost =
+            '<div class="test-post">
             <div class="event-heading-cont">
               <span class="number">#' . $ENum . '</span>
               <h2>' . $row->Title . '</h2>
@@ -274,16 +285,16 @@ class Scholastic extends CI_Controller
       $QResult = $this->ScholasticModel->get_search_events($SearchQ);
       $NumRows = $QResult->num_rows();
       $QResult = $QResult->result();
-      $Err = 
-      '<div class="error-cont">
+      $Err =
+        '<div class="error-cont">
         <img src="http://localhost/Shahain/Scholastic/application/assets/images/kao_3.png" alt="">
         <p>Looks like your search didn\'t match any events. Try searching again.</p>
       </div>';
       if ($NumRows) {
         foreach ($QResult as $row) {
           $ENum++;
-          $EachPost = 
-          '<div class="test-post">
+          $EachPost =
+            '<div class="test-post">
             <div class="event-heading-cont">
               <span class="number">#' . $ENum . '</span>
               <h2>' . $row->Title . '</h2>
@@ -308,7 +319,8 @@ class Scholastic extends CI_Controller
     }
   }
 
-  function load_beta() {
+  function load_beta()
+  {
     $this->load->view("beta-feature.html");
   }
 }
