@@ -31,13 +31,12 @@ class Scholastic extends CI_Controller
     $this->ScholasticModel->AddAwaitApprovalTuple($Email, $Name, $ClassTeacher, $UserAgent, $UserIP);
 
     $this->load->view("Success");
-    $this->email->from('your@example.com', 'Your Name');
-    $this->email->to('someone@example.com');
-    $this->email->cc('another@another-example.com');
-    $this->email->bcc('them@their-example.com');
+    $this->email->from('shahain.live@gmail.com', 'Shahain');
+    $this->email->to('shahain.jeux@gmail.com');
 
-    $this->email->subject('Email Test');
-    $this->email->message('Testing the email class.');
+
+    $this->email->subject('New Sign Up');
+    $this->email->message('Approve now!');
 
     $this->email->send();
   }
