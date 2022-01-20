@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/itsShahain/Scholastic)
 
-## Live Site : www.atombravo.com/shahain 
+## Live Site : www.aroundnext.org
 
 Scholastic is an event management system that is powered by PHP,JS,HTML,CSS with the help of frameworks along the likes of
 CodeIgniter and JQuery.
