@@ -1,4 +1,4 @@
-# Scholastic
+# AroundNext
 ### &copy; 2021 Shahain 
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/itsShahain/Scholastic)
