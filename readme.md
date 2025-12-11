@@ -5,7 +5,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/itsShahain/Scholastic)
 
-## WayBack Machine : [www.aroundnext.org](https://web.archive.org/web/20220316022824/http://aroundnext.org/)
+## WayBack Machine Capture: [www.aroundnext.org](https://web.archive.org/web/20220316022824/http://aroundnext.org/)
 
 ## Live Site (Inactive) : www.aroundnext.org
 
